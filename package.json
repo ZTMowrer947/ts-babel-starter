@@ -15,5 +15,9 @@
     "bugs": {
         "url": "https://github.com/ZTMowrer947/ts-babel-starter/issues"
     },
-    "homepage": "https://github.com/ZTMowrer947/ts-babel-starter#readme"
+    "homepage": "https://github.com/ZTMowrer947/ts-babel-starter#readme",
+    "devDependencies": {
+        "@types/node": "^14.0.14",
+        "typescript": "~3.7.5"
+    }
 }
