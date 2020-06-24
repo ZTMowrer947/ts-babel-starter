@@ -5,7 +5,13 @@
         "sourceType": "module",
         "ecmaVersion": 2019
     },
-    "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended", "plugin:@typescript-eslint/recommended-requiring-type-checking"],
+    "extends": [
+        "airbnb-base",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
+    ],
     "rules": {
         "no-unused-vars": "off",
         "@typescript-eslint/no-unused-vars": "error",
