@@ -1,11 +1,10 @@
-// A completely unneeded function to fill in here
-function add(left: number, right: number): number {
-    return left + right;
-}
+// Imports
+import add from './add';
 
+// Define addends and compute sum
 const num1 = 5;
 const num2 = 37;
 const sum = add(num1, num2);
 
-// eslint-disable-next-line no-console
-console.log(`${num1} + ${num2} = ${sum}`);
+// Print out result
+console.log(`${num1} + ${num2} = ${sum}`); // eslint-disable-line no-console
