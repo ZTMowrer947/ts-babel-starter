@@ -1,0 +1,19 @@
+{
+    "name": "ts-babel-starter",
+    "version": "1.0.0",
+    "description": "A custom starter template for building Node.js Apps with TypeScript and Babel",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ZTMowrer947/ts-babel-starter.git"
+    },
+    "author": "Zackery Mowrer",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ZTMowrer947/ts-babel-starter/issues"
+    },
+    "homepage": "https://github.com/ZTMowrer947/ts-babel-starter#readme"
+}
