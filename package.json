@@ -22,6 +22,7 @@
     "homepage": "https://github.com/ZTMowrer947/ts-babel-starter#readme",
     "dependencies": {
         "core-js": "3",
+        "cross-env": "^7.0.2",
         "regenerator-runtime": "^0.13.5"
     },
     "devDependencies": {
