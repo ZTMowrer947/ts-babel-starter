@@ -1,7 +1,7 @@
 {
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "project": "./tsconfig.json",
+        "project": "./tsconfig.app.json",
         "sourceType": "module",
         "ecmaVersion": 2019
     },
@@ -41,8 +41,7 @@
         }
     },
     "env": {
-        "node": true,
-        "es2019": true
+        "node": true
     },
     "overrides": [
         {
@@ -50,6 +49,9 @@
             "extends": ["plugin:jest/recommended"],
             "env": {
                 "jest": true
+            },
+            "parserOptions": {
+                "project": "./tsconfig.spec.json"
             }
         }
     ]
