@@ -4,6 +4,8 @@
     "description": "A custom starter template for building Node.js Apps with TypeScript and Babel",
     "main": "dist/index.js",
     "scripts": {
+        "start": "cross-env NODE_ENV=production node dist",
+        "build": "cross-env NODE_ENV=production gulp",
         "dev": "nodemon",
         "lint": "eslint . --ext .js,.ts",
         "test": "echo \"Error: no test specified\" && exit 1",
