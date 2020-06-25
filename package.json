@@ -1,6 +1,6 @@
 {
   "name": "ts-babel-starter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A custom starter template for building Node.js Apps with TypeScript and Babel",
   "main": "dist/index.js",
   "scripts": {
