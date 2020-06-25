@@ -39,5 +39,18 @@
                 "extensions": [".js", ".jsx", ".ts", ".tsx"]
             }
         }
-    }
+    },
+    "env": {
+        "node": true,
+        "es2019": true
+    },
+    "overrides": [
+        {
+            "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+            "extends": ["plugin:jest/recommended"],
+            "env": {
+                "jest": true
+            }
+        }
+    ]
 }
