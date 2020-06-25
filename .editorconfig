@@ -16,3 +16,10 @@ indent_size = 4
 # JavaScript and TypeScript files
 [*.{js,ts}]
 charset = utf-8
+
+# Markdown files
+[*.md]
+charset = utf-8
+
+# Indent with only two spaces
+indent_size = 2
