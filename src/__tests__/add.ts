@@ -1,5 +1,5 @@
 // Imports
-import add from '../add';
+import add from '@/add';
 
 // Test Suite
 describe('add function', () => {

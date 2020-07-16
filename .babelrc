@@ -17,7 +17,14 @@
   ],
   "plugins": [
     // Resolve TypeScript module aliases
-    ["module-resolver"],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@": "./src"
+        }
+      }
+    ],
 
     // Class properties
     ["@babel/plugin-proposal-class-properties", { "loose": true }],

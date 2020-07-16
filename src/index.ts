@@ -1,5 +1,5 @@
 // Imports
-import add from './add';
+import add from '@/add';
 
 // Define addends and compute sum
 const num1 = 5;
