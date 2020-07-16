@@ -35,8 +35,8 @@
       "@typescript-eslint/parser": [".ts", ".tsx"]
     },
     "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      "typescript": {
+        "directory": ["./tsconfig.json", "./tsconfig.spec.json"]
       }
     }
   },
@@ -45,7 +45,10 @@
   },
   "overrides": [
     {
-      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
+      "files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[tj]s?(x)"
+      ],
       "extends": ["plugin:jest/recommended"],
       "env": {
         "jest": true
