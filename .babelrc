@@ -1,31 +1,34 @@
 {
-    "presets": [
-        // Environment
-        [
-            "@babel/preset-env",
-            {
-                // Use core-js version 3
-                "corejs": 3,
+  "presets": [
+    // Environment
+    [
+      "@babel/preset-env",
+      {
+        // Use core-js version 3
+        "corejs": 3,
 
-                // Add polyfills based on usage
-                "useBuiltIns": "usage"
-            }
-        ],
-
-        // TypeScript
-        "@babel/preset-typescript"
+        // Add polyfills based on usage
+        "useBuiltIns": "usage"
+      }
     ],
-    "plugins": [
-        // Class properties
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
 
-        // Object spread ({ ...a }) proposal
-        "@babel/plugin-proposal-object-rest-spread",
+    // TypeScript
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    // Resolve TypeScript module aliases
+    ["module-resolver"],
 
-        // Optional chaining (a?.b) proposal
-        "@babel/plugin-proposal-optional-chaining",
+    // Class properties
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
 
-        // Nullish coalescing operator (a ?? b) proposal
-        "@babel/plugin-proposal-nullish-coalescing-operator"
-    ]
+    // Object spread ({ ...a }) proposal
+    "@babel/plugin-proposal-object-rest-spread",
+
+    // Optional chaining (a?.b) proposal
+    "@babel/plugin-proposal-optional-chaining",
+
+    // Nullish coalescing operator (a ?? b) proposal
+    "@babel/plugin-proposal-nullish-coalescing-operator"
+  ]
 }
