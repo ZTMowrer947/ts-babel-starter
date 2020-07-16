@@ -6,7 +6,7 @@ const terser = require('gulp-terser');
 const ts = require('gulp-typescript');
 
 // TypeScript project setup
-const tsProject = ts.createProject('tsconfig.json');
+const tsProject = ts.createProject('tsconfig.app.json');
 
 // Tasks
 function build() {
