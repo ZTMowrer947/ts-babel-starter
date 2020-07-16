@@ -5,7 +5,7 @@
 
 // Register Babel to transpile TypeScript program
 require('@babel/register')({
-    extensions: ['.js', '.ts'],
+  extensions: ['.js', '.ts'],
 });
 
 // Load program

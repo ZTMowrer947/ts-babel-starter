@@ -10,11 +10,11 @@ const tsProject = ts.createProject('tsconfig.json');
 
 // Tasks
 function build() {
-    return tsProject.src().pipe(babel()).pipe(terser()).pipe(gulp.dest('dist'));
+  return tsProject.src().pipe(babel()).pipe(terser()).pipe(gulp.dest('dist'));
 }
 
 function clean() {
-    return del(['dist']);
+  return del(['dist']);
 }
 
 exports.default = gulp.series(clean, build);
