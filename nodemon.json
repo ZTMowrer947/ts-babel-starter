@@ -6,6 +6,6 @@
   "env": {
     "NODE_ENV": "development"
   },
-  "exec": "babel-node -x .ts,.js src",
+  "exec": "yarn run babel-node -x .ts,.js src",
   "ext": "ts,js"
 }
