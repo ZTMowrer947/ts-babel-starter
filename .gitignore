@@ -103,9 +103,6 @@ dist
 # TernJS port file
 .tern-port
 
-# IDE configuration
-.vscode/
-
 # Yarn 2 files
 .yarn/*
 !.yarn/cache
