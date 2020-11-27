@@ -9,8 +9,8 @@
     "dev": "nodemon",
     "lint": "eslint . --ext .js,.ts",
     "test": "jest",
-    "typecheck": "tsc -noEmit -composite false -p tsconfig.app.json",
-    "typecheck:watch": "tsc -noEmit -composite false -w -p tsconfig.app.json"
+    "typecheck": "tsc -p tsconfig.app.json",
+    "typecheck:watch": "tsc -w -p tsconfig.app.json"
   },
   "repository": {
     "type": "git",
