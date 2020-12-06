@@ -1,12 +1,13 @@
 {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.app.json",
+    "project": ["./tsconfig.app.json", "./tsconfig.spec.json"],
     "sourceType": "module",
-    "ecmaVersion": 2019
+    "ecmaVersion": 2020
   },
   "extends": [
     "airbnb-base",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:prettier/recommended",
@@ -27,7 +28,8 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off"
   },
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
@@ -36,7 +38,7 @@
     },
     "import/resolver": {
       "typescript": {
-        "directory": ["./tsconfig.json", "./tsconfig.spec.json"]
+        "project": ["./tsconfig.app.json", "./tsconfig.spec.json"]
       }
     }
   },
@@ -45,6 +47,12 @@
   },
   "overrides": [
     {
+      "files": ["**/*.ts?(x)"],
+      "rules": {
+        "@typescript-eslint/explicit-module-boundary-types": "error"
+      }
+    },
+    {
       "files": [
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[tj]s?(x)"
@@ -52,9 +60,6 @@
       "extends": ["plugin:jest/recommended"],
       "env": {
         "jest": true
-      },
-      "parserOptions": {
-        "project": "./tsconfig.spec.json"
       }
     }
   ]
