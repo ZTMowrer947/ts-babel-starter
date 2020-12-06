@@ -7,7 +7,7 @@
     "start": "cross-env NODE_ENV=production node dist",
     "build": "cross-env NODE_ENV=production gulp",
     "dev": "nodemon",
-    "lint": "eslint . --ext .js,.ts",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
     "test": "jest",
     "typecheck": "tsc -p tsconfig.app.json",
     "typecheck:watch": "tsc -w -p tsconfig.app.json"
@@ -45,8 +45,8 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-import-resolver-typescript": "^2.0.0",
-    "eslint-plugin-import": "2.21.2",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-prettier": "^3.1.4",
     "gulp": "^4.0.2",
@@ -67,7 +67,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts}": "eslint --cache --fix",
+    "*.{js,ts,jsx,tsx}": "eslint --cache --fix",
     "*.{html,css,json,md}": "prettier --write"
   }
 }
